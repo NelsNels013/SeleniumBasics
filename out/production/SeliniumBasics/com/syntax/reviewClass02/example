@@ -1,0 +1,41 @@
+<html>
+    <head>
+         <title>who am i</title>
+    <head>
+
+    <body>
+         <div>
+             <input>enter your name</input>
+         <div>
+    <body>
+<html>
+
+Absolute xpath:
+
+/html/head/title ->to get the title
+/html/body/div/input -> to get to input tag
+---------------------------------------------------------------------------------------------------------------
+<html>
+    <head>
+         <title>who am i</title>
+    <head>
+
+    <body>
+         <div>
+             <label>hello</label>
+         </div>
+          <div>
+             <input>enter your name</input>
+         <div>
+    <body>
+<html>
+
+Absolute xpath example 2
+
+/html/body/div[2]/input -> to get to input tag
+---------------------------------------------------------------------------------------------------------------
+
+Relative xpath:
+//tagname[@attribute='attribute value']
+
+hey driver go to the tag "tagname" whose attribute  "attribute" has a value of "attribute value"
