@@ -7,7 +7,7 @@ Syntax:
 tagname[attribute = 'attribute value']
 e.g. input[value = 'LOGIN']
 
-CSS does not give us an oppurtunity to locate an element by it's text
+CSS does not give us an opportunity to locate an element by it's text
 
 Shortcuts for CSS:
 Shortcut for the className --> "."
