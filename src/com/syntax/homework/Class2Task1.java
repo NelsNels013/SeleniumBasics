@@ -7,6 +7,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Class2Task1 {
 
+    /*
+    navigate to https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22
+fill out the form
+click on register
+close the browser
+     */
+
     public static String url = "https://parabank.parasoft.com/parabank/register.htm;jsessionid=B8DD31FF0AFEDBDF4454B27BBC5C05B0%22";
 
     public static void main(String[] args) throws InterruptedException {
