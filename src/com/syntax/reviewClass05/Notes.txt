@@ -1,0 +1,6 @@
+Selenium Review 05
+
+1) explicit wait(with condition)
+
+2) Implicit waits(without condition):
+Whenever we are waiting for an element to appear in the DOM

@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class Class5Task1 {
 
@@ -32,13 +33,13 @@ Quit browser
         driver.get(url);
         driver.findElement(By.xpath("//a[text() = 'Create new account']")).click();
 
-        Thread.sleep(2000);
-        WebElement monthsDD = driver.findElement(By.cssSelector("select[id = 'month']"));
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        WebElement monthsDD = driver.findElement(By.id("month"));
         Select selectMonth = new Select(monthsDD);
         int sizeMonth = selectMonth.getOptions().size();
         System.out.println(sizeMonth);
 
-        WebElement dayDD = driver.findElement(By.cssSelector("select[aria-label='Day']"));
+        WebElement dayDD = driver.findElement(By.id("day"));
         Select selectDay = new Select(dayDD);
         int sizeOfDays =selectDay.getOptions().size();
         System.out.println(sizeOfDays);
@@ -48,14 +49,10 @@ Quit browser
         int sizeOfYears =  selectYear.getOptions().size();
         System.out.println(sizeOfYears);
 
-        WebElement month = driver.findElement(By.id("month"));
-        selectMonth.selectByVisibleText("July");
+        selectMonth.selectByVisibleText("Jul");
 
-
-        WebElement day = driver.findElement(By.id("day"));
         selectDay.selectByValue("2");
 
-        WebElement year = driver.findElement(By.id("year"));
         selectYear.selectByValue("1998");
     }
 }
